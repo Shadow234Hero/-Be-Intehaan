@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Priji — Girlfriend's Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Alex+Brush&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- floating petals canvas layer -->
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<!-- ============ GATE / ENVELOPE INTRO ============ -->
+<div class="gate" id="gate">
+  <div class="gate-frame">
+    <div class="gate-ornament top">❦</div>
+    <p class="gate-eyebrow">Wk chhoti si khani Meri Priji ke liye</p>
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-seal">♡</div>
+      <div class="envelope-front"></div>
+    </div>
+    <h1 class="gate-title">For My Priji</h1>
+    <p class="gate-sub">tap the envelope to open</p>
+    <div class="gate-ornament bottom">❦</div>
+  </div>
+</div>
+
+<!-- ============ MAIN SITE ============ -->
+<main id="site" class="site">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-veil"></div>
+    <div class="hero-content">
+      <p class="eyebrow">01 · 08 · girlfriend's day</p>
+      <h1 class="hero-title">Happy<br><span class="script">Girlfriend's&nbsp;Day</span></h1>
+      <p class="hero-sub">to the girl who changes me to a love story</p>
+      <div class="scroll-cue">
+        <span></span>
+        <p>scroll kro🤭👇</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO NOTE -->
+  <section class="intro" id="intro">
+    <div class="divider"><span>❦</span></div>
+    <p class="intro-eyebrow">before anything else</p>
+    <h2 class="intro-title">I just wanted one day<br>that was entirely, unapologetically <span class="script">about you.</span></h2>
+    <p class="intro-text">
+      So I made you this — a little corner of the internet with your face, your laugh,
+      and everything I don't say enough. Take your time here. There's a video, a gallery,
+      a few reasons, a letter, and something in my own voice waiting at the end.
+    </p>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-section" id="video-section">
+    <div class="divider light"><span>❦</span></div>
+    <p class="eyebrow center">watch</p>
+    <h2 class="section-title center">a little glimpse of <span class="script">you</span></h2>
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <video id="girVideo" src="assets/video/gir-edit.mp4" playsinline controls loop poster="assets/img/gir-poster.jpg"></video>
+    </div>
+    <p class="video-caption">every frame of you is my favorite kind of proof that you're real</p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery-section">
+    <div class="divider"><span>❦</span></div>
+    <p class="eyebrow center">moments</p>
+    <h2 class="section-title center">a gallery of <span class="script">my favorite face</span></h2>
+    <div class="gallery" id="gallery">
+      <figure class="polaroid p1"><img src="assets/img/photo1.jpg" alt="her"><figcaption>golden hour, golden girl</figcaption></figure>
+      <figure class="polaroid p2"><img src="assets/img/photo2.jpg" alt="her"><figcaption>that smile, again</figcaption></figure>
+      <figure class="polaroid p3"><img src="assets/img/photo3.jpg" alt="her"><figcaption>my favorite chaos</figcaption></figure>
+      <figure class="polaroid p4"><img src="assets/img/photo4.jpg" alt="her"><figcaption>soft light, softer heart</figcaption></figure>
+      <figure class="polaroid p5"><img src="assets/img/photo5.jpg" alt="her"><figcaption>caught you being cute</figcaption></figure>
+      <figure class="polaroid p6"><img src="assets/img/photo6.jpg" alt="her"><figcaption>main character energy</figcaption></figure>
+      <figure class="polaroid p7"><img src="assets/img/photo7.jpg" alt="her"><figcaption>dressed up, dressed down — still my favorite</figcaption></figure>
+      <figure class="polaroid p8"><img src="assets/img/photo8.jpg" alt="her"><figcaption>a little mirror selfie magic</figcaption></figure>
+      <figure class="polaroid p9"><img src="assets/img/photo9.jpg" alt="her"><figcaption>that look you give the camera</figcaption></figure>
+      <figure class="polaroid p10"><img src="assets/img/photo10.jpg" alt="her"><figcaption>a memory I keep coming back to</figcaption></figure>
+      <figure class="polaroid p11"><img src="assets/img/photo11.jpg" alt="her"><figcaption>simply, unfairly pretty</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="reasons-section" id="reasons-section">
+    <div class="divider light"><span>❦</span></div>
+    <p class="eyebrow center">a few, out of many</p>
+    <h2 class="section-title center">reasons you're <span class="script">my favorite person</span></h2>
+    <p class="reasons-hint">(flip each card — there's more underneath)</p>
+    <div class="reasons-grid" id="reasonsGrid">
+      <!-- cards injected by JS from array, but kept static here for no-js fallback -->
+      <div class="reason-card" tabindex="0">
+        <div class="reason-inner">
+          <div class="reason-face front"><span class="reason-num">01</span><p>the way you laugh at your own jokes before you finish them</p></div>
+          <div class="reason-face back"><p>it's the most honest sound in the world, and I never get tired of it.</p></div>
+        </div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="reason-inner">
+          <div class="reason-face front"><span class="reason-num">02</span><p>you remember the tiny things I mention once</p></div>
+          <div class="reason-face back"><p>and somehow that makes me feel more seen than anything grand ever could.</p></div>
+        </div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="reason-inner">
+          <div class="reason-face front"><span class="reason-num">03</span><p>you turn ordinary days into ones worth remembering</p></div>
+          <div class="reason-face back"><p>a random Tuesday with you outranks most "special occasions" without you.</p></div>
+        </div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="reason-inner">
+          <div class="reason-face front"><span class="reason-num">04</span><p>your patience, even when I don't deserve it</p></div>
+          <div class="reason-face back"><p>you make room for me to mess up and still be loved. that's rare.</p></div>
+        </div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="reason-inner">
+          <div class="reason-face front"><span class="reason-num">05</span><p>the way you say my name</p></div>
+          <div class="reason-face back"><p>out of everyone who's ever said it, yours is my favorite version.</p></div>
+        </div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="reason-inner">
+          <div class="reason-face front"><span class="reason-num">06</span><p>you, simply existing</p></div>
+          <div class="reason-face back"><p>some days that's reason enough. today especially.</p></div>
+        </div>
+      </div>
+    </div>
+    <p class="reasons-footnote">✎ edit these six anytime — swap them for your own private inside jokes and reasons.</p>
+  </section>
+
+  <!-- LETTER -->
+  <section class="letter-section" id="letter-section">
+    <div class="divider"><span>❦</span></div>
+    <p class="eyebrow center">read this slowly</p>
+    <h2 class="section-title center">a <span class="script">letter</span>, for you</h2>
+
+    <div class="letter-wrap">
+      <div class="letter-envelope" id="letterEnvelope">
+        <div class="le-back"></div>
+        <div class="le-flap"></div>
+        <div class="le-seal">♡</div>
+        <div class="le-front"><span>Priji</span></div>
+      </div>
+
+      <article class="letter-paper" id="letterPaper">
+        <p class="letter-date">1st August</p>
+        <p class="letter-greeting">My dearest Priji,</p>
+        <p>
+          I don't know if a website can hold everything I feel, but I wanted to try anyway.
+          Girlfriend's Day felt like the perfect excuse to finally put into words what I usually
+          just feel and never quite say — so here it is, in writing, so you can come back to it
+          whenever you need reminding.
+        </p>
+        <p>
+          Thank you for being patient with me, for laughing at things that weren't even that funny,
+          for showing up in the small ordinary moments as much as the big ones. You make being
+          known feel safe, and that is not a small thing to give someone.
+        </p>
+        <p>
+          I hope today you feel exactly as loved as you make me feel every other day of the year.
+          This is just the beginning of the things I want to build with you, page by page.
+        </p>
+        <p class="letter-sign">Always yours,<br><span class="script">your priji</span></p>
+        <p class="letter-edit-note">✎ replace this letter with your own words — everything here is a placeholder for you to make it real.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- VOICE NOTE -->
+  <section class="voice-section" id="voice-section">
+    <div class="divider light"><span>❦</span></div>
+    <p class="eyebrow center">listen</p>
+    <h2 class="section-title center">something in <span class="script">my own voice</span></h2>
+    <p class="voice-hint">a little recording, just for your ears</p>
+
+    <div class="voice-player" id="voicePlayer">
+      <button class="voice-play" id="voicePlayBtn" aria-label="Play voice note">
+        <svg id="voicePlayIcon" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M8 5v14l11-7z"></path></svg>
+      </button>
+      <div class="voice-body">
+        <div class="voice-track" id="voiceTrack">
+          <div class="voice-progress" id="voiceProgress"></div>
+        </div>
+        <div class="voice-time">
+          <span id="voiceCurrent">0:00</span>
+          <span id="voiceStatus">add your voice note to activate this player</span>
+        </div>
+      </div>
+    </div>
+    <audio id="voiceAudio" preload="metadata">
+      <source src="assets/audio/voice-note.mp3" type="audio/mpeg">
+    </audio>
+    <p class="voice-note-instructions">
+      ✎ drop your recording into <code>assets/audio/voice-note.mp3</code> (keep that exact filename) and this player will come alive automatically.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="divider"><span>❦</span></div>
+    <p class="footer-script script">happy girlfriend's day, priji</p>
+    <p class="footer-sub">made with a lot of love, and a little bit of code</p>
+  </footer>
+
+</main>
+
+<!-- MUSIC TOGGLE -->
+<audio id="bgMusic" src="assets/audio/be-intehaan.mp3" loop preload="auto"></audio>
+<button class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+  <span class="music-bars" id="musicBars">
+    <i></i><i></i><i></i><i></i>
+  </span>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
